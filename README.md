@@ -23,6 +23,9 @@ Taxonomic resolution of diet methodologies.
  3) How complete is our knowledge of ringtail diet? What methods or areas show the greatest promise for future study? 
 
 ### Study design: 
+
+
+
 #### Study 
 
 ### Analysis: 
@@ -33,5 +36,10 @@ Taxonomic resolution of diet methodologies.
 ### Permits
 
 ### Important background papers: 
+
+Jordan MJ. Dietary analysis for mammals and birds: a review of field techniques and animal‐management applications. International Zoo Yearbook. 2005 Jan;39(1):108-16. https://zslpublications.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/j.1748-1090.2005.tb00010.x
+
+Pringle RM, Hutchinson MC. Resolving food-web structure. Annual Review of Ecology, Evolution, and Systematics. 2020 Nov 2;51:55-80.
+https://www.annualreviews.org/doi/full/10.1146/annurev-ecolsys-110218-024908#_i3
 
 ### CHANGE-LOG:
