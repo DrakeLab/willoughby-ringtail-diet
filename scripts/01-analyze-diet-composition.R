@@ -2,12 +2,12 @@
 
 ## SET UP 
 # load libraries
-library(dplyr)
-library(ggplot2)
-library(GGally)
-library(geomnet)
-library(ggnetwork)
-library(igraph)
+library(dplyr) # data wrangling 
+library(ggplot2) # pretty plots
+library(GGally) # network
+library(geomnet) # network
+library(ggnetwork) # network
+library(igraph) # network
 
 # add analysis functions 
 '%notin%' <- function(x,y)!('%in%'(x,y))
@@ -267,12 +267,14 @@ trad_lit <- scat_studies %>% select(n_Scat, n_genera)
 names(trad_lit)[1] <- "Sites"
 names(trad_lit)[2] <- "exact"
 
+scat_studies <- dplyr::filter(diet_studies, method.2 == "scat") 
+
 # plot genera richness by scat sample size 
 ggplot(scat_studies) + 
-  geom_point(aes(x = as.numeric(n_Scat), y = n_genera ,colour = Ecoregion_Description), size = 5) + 
-  geom_smooth(aes(x = as.numeric(n_Scat), y = n_genera), method="lm") + 
+  geom_point(aes(x = as.numeric(n_Scat), y = log(n_genera) ,colour = Ecoregion_Description), size = 5) + 
+  geom_smooth(aes(x = as.numeric(n_Scat), y = log(n_genera)), method="lm") + 
   labs(x = "Scat Segments",
-       y = "Observed genera richness") + 
+       y = "Observed genera richness (log)") + 
   theme_classic()
 
 scat_lm <- lm(n_genera ~ as.numeric(n_Scat), data = scat_studies)
