@@ -289,6 +289,9 @@ di_al_m <- circlize::adjacencyList2Matrix(di_al, square = FALSE)
 network <- graph_from_incidence_matrix(di_al_m )
 
 # ds.net <- network(diet_items$edges[, 1:2], directed = FALSE)
+				 
+## CALCULATE OMNIVORY 
+				 
 
 
 
