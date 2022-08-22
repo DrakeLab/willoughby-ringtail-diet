@@ -11,19 +11,26 @@ studies <- studies %>%
 er_data <- select(studies, source_id, Latitude, Longitude, ecoregion_lvl1, er1_name, er1_color, Decade)
 
 # add in ecoregions with no data 
-er_data[nrow(er_data) + 1,] <- c("","","","","Marine West Coast Forest", "","")
-er_data[nrow(er_data) + 1,] <- c("","","","","Tropical Wet Forests", "","")
+er_data[nrow(er_data) + 1,] <- c(NA,NA,NA,NA,"Marine West Coast Forest","#7c7c7c",NA)
+er_data[nrow(er_data) + 1,] <- c(NA,NA,NA,NA,"Tropical Wet Forests","#7c7c7c",NA)
 er_data$er1_name <- as.factor(er_data$er1_name )
-er_data <- er_data %>% dplyr::filter(Decade != "")
 
 # plot histogram timeline by ecoregion
-er_plot <- ggplot(er_data, aes(x = Decade)) +
-  geom_histogram(stat = "count") +
-  facet_wrap(~ er1_name, labeller = labeller(er1_name = label_wrap_gen(width = 25))) + 
-  theme_minimal() +
+er_plot <- ggplot(er_data, aes(x = as.numeric(Decade), group = er1_name)) +
+  geom_rect(
+    aes(xmin=-Inf, xmax=Inf,
+                 ymin=0, ymax=4),    # totally defined by trial-and-error
+                 fill=er_data$er1_color) + 
+  geom_histogram() +
+  facet_wrap(~ er1_name, labeller = labeller(er1_name = label_wrap_gen(width = 25)), scales = 'free') + 
   theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=1)) + 
+  theme_classic() +
+  scale_x_continuous(limits=c(1920,2025)) + scale_y_continuous(limits=c(0,4)) + 
   ylab('Studies') +
-  xlab('') # + 
+  xlab('')
+ 
 #  theme(plot.title= element_text(hjust=.5), 
 #        panel.background = element_rect(fill=unique(er_data$er1_color)))
-er_plot
+pdf(file = "figures/map.pdf", height = 7, width = 15) #default is inches
+print(er_plot)
+dev.off() 
