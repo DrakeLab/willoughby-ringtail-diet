@@ -25,10 +25,16 @@ Like many generalist species, the diverse foraging strategies of ringtails (*Bas
 ### Data Collection 
 
 
+```
+value = 10 + 5
+```
+
 Data  | Progress
 ------------- | -------------
 metadata  | ![Progress](https://progress-bar.dev/59)
 studies  | ![Progress](https://progress-bar.dev/76)
+study_summaries  | 
+populations  | ![Progress](https://progress-bar.dev/`value`)
 interactions  | ![Progress](https://progress-bar.dev/59)
 
 ### Analysis: 
@@ -36,7 +42,12 @@ interactions  | ![Progress](https://progress-bar.dev/59)
 
 ### Checklist: 
 
-### Permits
+### Products 
+
+* CURO
+* SWAN
+* ASM
+* 
 
 ### Important background papers: 
 
