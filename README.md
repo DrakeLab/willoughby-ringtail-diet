@@ -22,6 +22,15 @@ Like many generalist species, the diverse foraging strategies of ringtails (*Bas
 
 #### Study 
 
+### Data Collection 
+
+
+Data  | Progress
+------------- | -------------
+metadata  | https://progress-bar.dev/<59>
+studies  | https://progress-bar.dev/<76>
+interactions  | https://progress-bar.dev/<59>
+
 ### Analysis: 
 
 
