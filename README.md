@@ -34,7 +34,7 @@ Data  | Progress
 metadata  | ![Progress](https://progress-bar.dev/59)
 studies  | ![Progress](https://progress-bar.dev/76)
 study_summaries  | 
-populations  | ![Progress](https://progress-bar.dev/`value`)
+populations  | ![Progress](https://progress-bar.dev/{value})
 interactions  | ![Progress](https://progress-bar.dev/59)
 
 ### Analysis: 
