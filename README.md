@@ -22,6 +22,8 @@ Like many generalist species, the diverse foraging strategies of ringtails (*Bas
 
 #### Study 
 
+---
+
 ### Data Collection 
 Data input takes place on the following [Google Sheet](https://docs.google.com/spreadsheets/d/1M-M2E0h1CC5UlUgtnll5JIhjpUP0AiiO4tX1FLaAR6w/edit?usp=sharing). Static versions are then kept in this repository. 
 
@@ -32,6 +34,8 @@ studies  | ![Progress](https://progress-bar.dev/78)
 populations  | ![Progress](https://progress-bar.dev/59)
 population_summaries  | ![Progress](https://progress-bar.dev/59)
 interactions  | ![Progress](https://progress-bar.dev/59)
+
+---
 
 ### Repo Structure
 -  `data/` contains data used in these analyses, including
