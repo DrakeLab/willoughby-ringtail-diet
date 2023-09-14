@@ -89,14 +89,14 @@ interactions  | ![Progress](https://progress-bar.dev/59)
 
 * Speir, S, Willoughby AR, Altizer S. (2021) Expansion and comparison of ringtail (Bassariscus astutus) 
       diet in Zion National Park. UGA CURO Symposium. 13 Apr. (poster). Recipient of 1st Place UGA Libraries       
-      Undergraduate Award for 1st-3rd Year Division. [link](https://drive.google.com/file/d/1uog78t_9qbTmkgbjhhkKwqNYvKBuPipg/view?usp=share_link)
+      Undergraduate Award for 1st-3rd Year Division. [[link](https://drive.google.com/file/d/1uog78t_9qbTmkgbjhhkKwqNYvKBuPipg/view?usp=share_link)]
 
 * Willoughby AR, Speir S*, Altizer S. (2022). Expansion and comparison of ringtail (Bassariscus astutus) diet across the Southwest. 69th Annual Meeting of 
-      the Southwestern Association of Naturalists. 23 April. [link](https://drive.google.com/file/d/18I4sBirtLM6235FNXiWogi__qJcVE6yf/view?usp=share_link)
+      the Southwestern Association of Naturalists. 23 April. [[link](https://drive.google.com/file/d/18I4sBirtLM6235FNXiWogi__qJcVE6yf/view?usp=share_link)]
 
 * Speir, S, Willoughby AR, Altizer S. (2022) Examining methodologies and dietary diversity across the 
       ringtail (Bassariscus astutus) distribution 102nd meeting of the American Society of Mammalogists. 
-      Tucson, AZ. 20 Jun. (poster) [link](https://drive.google.com/file/d/1EpAuf-Gjyz7FhBcxAP9w4rcuqfJkcekL/view?usp=share_link)
+      Tucson, AZ. 20 Jun. (poster) [[link](https://drive.google.com/file/d/1EpAuf-Gjyz7FhBcxAP9w4rcuqfJkcekL/view?usp=share_link)]
 
 
 ### Important background papers: 
