@@ -1,7 +1,7 @@
 # PROTOCOL FOR: 
 # A review of the diet flexibility of a common carnivore, the ringtail (Bassariscus astutus)
 
-_Last updated: March 8, 2023_
+_Last updated: September 14, 2023_
 
 ## Authors: 
 
@@ -23,15 +23,58 @@ Like many generalist species, the diverse foraging strategies of ringtails (*Bas
 #### Study 
 
 ### Data Collection 
-
+Data input takes place on the following [Google Sheet](https://docs.google.com/spreadsheets/d/1M-M2E0h1CC5UlUgtnll5JIhjpUP0AiiO4tX1FLaAR6w/edit?usp=sharing). Static versions are then kept in this repository. 
 
 Data  | Progress
 ------------- | -------------
 metadata  | ![Progress](https://progress-bar.dev/59)
-studies  | ![Progress](https://progress-bar.dev/76)
-study_summaries  | 
-populations  |
+studies  | ![Progress](https://progress-bar.dev/78)
+populations  | ![Progress](https://progress-bar.dev/59)
+population_summaries  | ![Progress](https://progress-bar.dev/59)
 interactions  | ![Progress](https://progress-bar.dev/59)
+
+### Repo Structure
+-  `data/` contains data used in these analyses, including
+    -   databases of diet items (`interactions.csv`) and categories (`pop_summaries.csv`)
+    -   databases of study- (`studies.csv`) and population- (`pops.csv`) level traits
+    -   full references for all studies discovered through systematic search (`references.csv`)
+    -   A `metadata.csv` file that describes variables in my database
+    -  look up tables to normalize diet metrics (`.csv`) and categories (`.csv`)
+    -   `region_names.rds`, a list of zoogeographical region names used to describe cross-validation regions. 
+-  `figures/` contains figures and tables in the paper
+-   `scripts/` contains all the scripts used to fit the models and generate outputs
+-   `R/` contains files with functions used in other scripts.    
+-   `misc/` contains small scripts used for other calculations
+-   `intermediates/` is a holding directory for
+     intermediate data files and fitted model objects in
+     `*.rds` R data form. These are re-created when the project is built
+-   `shapefiles/` is an empty holding directory.  Large shapefiles used to generate
+    maps and in analyses are stored separately on AWS to limit the size of this
+    repository.  They are downloaded to this folder by the scripts when needed.
+---
+
+### Listing of files
+```
+├── README.md                                          | This file in .md format
+├── README.txt                                         | This file in .txt format
+├── willoughby-ringtail-diet.Rproj                     | Rstudio project organization file
+├── data/
+│   ├── interactions.csv                               | diet item database
+│   ├── pop_summaries.csv                              | diet category database
+│   ├── studies.csv                                    | study database for those that are included in this analysis
+│   ├── populations.csv                                | population database for those that are included in this analysis
+│   ├── metadata.csv                                   | listing of variables in all databases
+│   ├── references.csv                                 | listing of reference sources for all discovered literature
+│   └── lookup_tables/                                 | data files to normalise verbatim variables 
+│
+├── figures                                            | Figures and tables for  manuscript and supplements
+│
+├── scripts/                                           | Scripts to build project outputs
+│
+├── packrat/                                           | Holds all R package dependencies
+└── .Rprofile                                          | Configures R to use packrat dependencies
+```
+---
 
 ### Analysis: 
 
