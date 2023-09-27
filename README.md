@@ -24,7 +24,8 @@ Like many generalist species, the diverse foraging strategies of ringtails (*Bas
     - Niche Specialism: Ringtails will exhibit decreased generalism when competitors are high.
     - Staples and Supplements: Ringtails will exhibit decreased generalism when competitors are high.
   4)  Do environmental factors modify ringtail diet omnivory?
-     *Predictions*
+
+      *Predictions*
     - Diet switching: The dominant diet class will be dependent on environmental factors
     - Ringtails will always exhibit the same dominance of diet class, regardless of location. 
       
