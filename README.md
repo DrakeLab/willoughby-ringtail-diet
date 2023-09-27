@@ -40,7 +40,7 @@ We will construct a general linear model to evaluate environmental impacts on ri
 
 $$
 \begin{aligned}
-sp50 ~ latitude + resource richness + competitors + anthropogenic 
+sp50 = latitude + resource richness + competitors + anthropogenic 
 \end{aligned}
 $$
 
