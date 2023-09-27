@@ -7,20 +7,48 @@ _Last updated: September 14, 2023_
 
 * Anna Willoughby
 * Sydney Speir (CURO/ECOL4960R Spring 2021)
+* John Drake
 * Sonia Altizer 
 
 ### Background: 
 
-Like many generalist species, the diverse foraging strategies of ringtails (*Bassariscus astutus*) allow them to inhabit a wide range of ecoregions across North America. As omnivores, ringtails are known to eat a range of plants, insects, small mammals, and other food items. In this study, we conduct a literature review of ringtail diet studies (n=40) to describe the various plants, prey, and inorganic items consumed by ringtails, describe ringtail dietary diversity across ecoregions, and highlight gaps in the current understanding of ringtail diet. Studies were found through a systematic literature review and supplemented by other scholarly publications. Within each study, we documented identified diet items, their taxonomic rank, methods, sample size, and location. We hypothesize that fresh scat analysis will show the highest taxonomic richness, as it experiences less environmental degradation than other physical examination methods. We also document unique diet items found in observational studies to describe their usefulness in dietary analysis studies. Finally, we conduct a comparison of diets to understand differences in ringtail diet composition. This study sheds light informs the dietary diversity of a flexible mesocarnivore and the factors that influence omniviry.
-
+Like many generalist species, the diverse foraging strategies of ringtails (*Bassariscus astutus*) allow them to inhabit a wide range across North America. Ringtails are exceptional omnivores, known to eat a range of plants, insects, small mammals, and other food items. In this study, we conduct a literature review of ringtail diet studies (n=40) to describe the various plants, prey, and inorganic items consumed by ringtails. From these population-level diets, we explore how ringtail dependence on different diet items is dictated by habitat features, such as location, resource availability, overlap with people, and competition. We describe for each ringtail population a value of diet generalism (sp50) at different taxonomic resolution, species up to class, 
 
 ### Research questions:
- 1) What is the diet of ringtails? 
- 2) How flexibile is ringtail omnivory? 
-
+ 1) What is the diet of ringtails?
+   *Predictions*
+    - Ringtails will exhibit the hollow curve common of vertebrate diets, however, we expect variation in the dimensions of this trend based on study location and methods. 
+ 2) Do environmental factors modify ringtail diet generalism?
+    *Predictions*
+    - Indiscriminate eaters: Ringtails will exhibit increased generalism in more resource-rich environments
+    - Niche Specialism: Ringtails will exhibit decreased generalism when competitors are high.
+    - Staples and Supplements: Ringtails will exhibit decreased generalism when competitors are high.
+  3)  Do environmental factors modify ringtail diet omnivory?
+     *Predictions*
+    - Diet switching: The dominant diet class will be dependent on environmental factors
+    - Ringtails will always exhibit the same dominance of diet class, regardless of location. 
+      
 ### Study design: 
 
-#### Study 
+Ringtail diet studies were found through a systematic literature review and supplemented by other scholarly publications. Within each study, we documented identified diet items, relative abundance, study methods, sample size, and location. Each diet items' taxonomy was harmonized to the ITIS authority, and assigned a taxonomic rank. 
+
+We will examine how the biogeographic and anthropogenic habitat traits influence ringtail diet generalism. First, we will construct diet abundance-rank curves for each ringtail population and calculate sp50 value for several different taxonomic resolutions. 
+
+## Analysis 
+We will construct a general linear model to evaluate environmental impacts on ringtail diet generalism: 
+
+$$
+\begin{aligned}
+sp50 ~ latitude + resource richness + competitors + anthropogenic 
+\end{aligned}
+$$
+
+### Caveats
+- need to limit variables due to small sample size
+- Can I control for study size or duration, since this will bias results? 
+- how to calculate resource availability?
+- how to calculate competitors?
+- more appropriate to do a lot of correlations 
 
 ---
 
@@ -79,8 +107,6 @@ interactions  | ![Progress](https://progress-bar.dev/59)
 └── .Rprofile                                          | Configures R to use packrat dependencies
 ```
 ---
-
-### Analysis: 
 
 
 ### Checklist: 
