@@ -58,11 +58,11 @@ Data input takes place on the following [Google Sheet](https://docs.google.com/s
 
 Data  | Progress
 ------------- | -------------
-metadata  | ![Progress](https://progress-bar.dev/59)
-studies  | ![Progress](https://progress-bar.dev/78)
-populations  | ![Progress](https://progress-bar.dev/59)
+metadata  | ![Progress](https://progress-bar.dev/60)
+studies  | ![Progress](https://progress-bar.dev/85)
+populations  | ![Progress](https://progress-bar.dev/44)
 population_summaries  | ![Progress](https://progress-bar.dev/59)
-interactions  | ![Progress](https://progress-bar.dev/59)
+interactions  | ![Progress](https://progress-bar.dev/63)
 
 ---
 
