@@ -17,14 +17,15 @@ Like many generalist species, the diverse foraging strategies of ringtails (*Bas
 ### Research questions:
  1) What is the diet of ringtails?
    *Predictions*
-    - Ringtails will exhibit the hollow curve common of vertebrate diets, however, we expect variation in the dimensions of this trend based on study location and methods. 
+    - Ringtails will exhibit the hollow curve common of vertebrate diets, however, we expect variation in the dimensions of this trend based on study location and methods.
+     
  2) Do environmental factors modify ringtail diet generalism?
     *Predictions*
     - Indiscriminate eaters: Ringtails will exhibit increased generalism in more resource-rich environments
     - Niche Specialism: Ringtails will exhibit decreased generalism when competitors are high.
     - Staples and Supplements: Ringtails will exhibit decreased generalism when competitors are high.
-  4)  Do environmental factors modify ringtail diet omnivory?
-
+     
+  3)  Do environmental factors modify ringtail diet omnivory?
       *Predictions*
     - Diet switching: The dominant diet class will be dependent on environmental factors
     - Ringtails will always exhibit the same dominance of diet class, regardless of location. 
@@ -40,7 +41,7 @@ For each ringtail population, we constructed diet abundance-rank relationships b
 To assess the habitat traits that may influence ringtail diet generalism, we first assembled potential variables from several biogeographic, ecological, and anthropogenic datasets. 
 
 ## Analysis 
-We will construct a general linear model to evaluate environmental impacts on ringtail diet generalism: 
+As these correlates greatly outnumber the sample of ringtail populations and may be subject to collinearity, we analyzed data using an elastic-net regression. 
 
 $$
 \begin{aligned}
