@@ -1,5 +1,5 @@
 # PROTOCOL FOR: 
-# A review of the diet flexibility of a common carnivore, the ringtail (Bassariscus astutus)
+# A review of the diet flexibility of a common omnivore, the ringtail (Bassariscus astutus)
 
 _Last updated: September 14, 2023_
 
@@ -12,7 +12,7 @@ _Last updated: September 14, 2023_
 
 ### Background: 
 
-Like many generalist species, the diverse foraging strategies of ringtails (*Bassariscus astutus*) allow them to inhabit a wide range across North America. Ringtails are exceptional omnivores, known to eat a range of plants, insects, small mammals, and other food items. In this study, we conduct a literature review of ringtail diet studies (n=40) to describe the various plants, prey, and inorganic items consumed by ringtails. From these population-level diets, we explore how ringtail dependence on different diet items is dictated by habitat features, such as location, resource availability, overlap with people, and competition. We describe for each ringtail population a value of diet generalism (sp50) at different taxonomic resolution, species up to class, 
+Like many generalist species, the diverse foraging strategies of ringtails (*Bassariscus astutus*) allow them to inhabit a wide range of habitats across North America. Ringtails are exceptional omnivores, known to eat plants, insects, small mammals, birds, and human-provided foods like fig bars or pet food. In this study, we conduct a literature review of ringtail diet studies (n=40) to describe the various plants, prey, and inorganic items consumed by ringtails. From these population-level diet surveys, we explore how ringtail dependence on different diet items is dictated by habitat features, such as location, resource availability, overlap with people, and competition. We describe for each ringtail population a value of diet generalism (sp50) at different taxonomic resolutions. 
 
 ### Research questions:
  1) What is the diet of ringtails?
@@ -30,10 +30,14 @@ Like many generalist species, the diverse foraging strategies of ringtails (*Bas
     - Ringtails will always exhibit the same dominance of diet class, regardless of location. 
       
 ### Study design: 
+*Data Collation*
+We identified ringtail diet studies through a systematic literature review, then supplemented this corpus with other scholarly publications identified though targeted repository reviews and citation diving (Supplementary Figure 1). For each study, we extracted identified diet items, assessed metrics, relative abundance values, study methods, sample size, and location. Each diet items' taxonomy was harmonized to the ITIS authority and assigned a taxonomic rank. 
 
-Ringtail diet studies were found through a systematic literature review and supplemented by other scholarly publications. Within each study, we documented identified diet items, relative abundance, study methods, sample size, and location. Each diet items' taxonomy was harmonized to the ITIS authority, and assigned a taxonomic rank. 
+*Population-level diet metric calculations*
+For each ringtail population, we constructed diet abundance-rank relationships based on reported values and metrics. These data were then fit to a negative exponential curve, from which we could calculate a measure of diet generalism, (sp50, see Hutchinson et al. 2021). 
 
-We will examine how the biogeographic and anthropogenic habitat traits influence ringtail diet generalism. First, we will construct diet abundance-rank curves for each ringtail population and calculate sp50 value for several different taxonomic resolutions. 
+*Environmental correlates*
+To assess the habitat traits that may influence ringtail diet generalism, we first assembled potential variables from several biogeographic, ecological, and anthropogenic datasets. 
 
 ## Analysis 
 We will construct a general linear model to evaluate environmental impacts on ringtail diet generalism: 
@@ -58,11 +62,11 @@ Data input takes place on the following [Google Sheet](https://docs.google.com/s
 
 Data  | Progress
 ------------- | -------------
-metadata  | ![Progress](https://progress-bar.dev/60)
+metadata  | ![Progress](https://progress-bar.dev/64)
 studies  | ![Progress](https://progress-bar.dev/85)
-populations  | ![Progress](https://progress-bar.dev/44)
-population_summaries  | ![Progress](https://progress-bar.dev/59)
-interactions  | ![Progress](https://progress-bar.dev/63)
+populations  | ![Progress](https://progress-bar.dev/53)
+population_summaries  | ![Progress](https://progress-bar.dev/35)
+interactions  | ![Progress](https://progress-bar.dev/53)
 
 ---
 
@@ -92,12 +96,14 @@ interactions  | ![Progress](https://progress-bar.dev/63)
 ├── README.txt                                         | This file in .txt format
 ├── willoughby-ringtail-diet.Rproj                     | Rstudio project organization file
 ├── data/
-│   ├── interactions.csv                               | diet item database
-│   ├── pop_summaries.csv                              | diet category database
-│   ├── studies.csv                                    | study database for those that are included in this analysis
-│   ├── populations.csv                                | population database for those that are included in this analysis
-│   ├── metadata.csv                                   | listing of variables in all databases
-│   ├── references.csv                                 | listing of reference sources for all discovered literature
+│   ├── raw/
+│   │    ├── interactions.csv                          | diet item database
+│   │    ├── pop_summaries.csv                         | diet category database
+│   │    ├── studies.csv                               | study database for those that are included in this analysis
+│   │    ├── populations.csv                           | population database for those that are included in this analysis
+│   │    ├── metadata.csv                              | listing of variables in all databases
+│   │    └── references.csv                            | listing of reference sources for all discovered literature
+│   ├── processed/                                     | calculated population diet abundance distributions and traits
 │   └── lookup_tables/                                 | data files to normalise verbatim variables 
 │
 ├── figures                                            | Figures and tables for  manuscript and supplements
