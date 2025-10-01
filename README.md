@@ -1,12 +1,11 @@
 # PROTOCOL FOR: 
-# A review of the diet flexibility of a common omnivore, the ringtail (Bassariscus astutus)
+# Macroecology of omnivory in the ringtail (*Bassariscus astutus*), a wide-ranging North American mamma
 
-_Last updated: September 14, 2023_
+_Last updated: October 1, 2025_
 
 ## Authors: 
 
 * Anna Willoughby
-* Sydney Speir (CURO/ECOL4960R Spring 2021)
 * John Drake
 * Sonia Altizer 
 
@@ -34,7 +33,7 @@ Like many generalist species, the diverse foraging strategies of ringtails (*Bas
 *Data Collation*
 We identified ringtail diet studies through a systematic literature review, then supplemented this corpus with other scholarly publications identified though targeted repository reviews and citation diving (Supplementary Figure 1). For each study, we extracted identified diet items, assessed metrics, relative abundance values, study methods, sample size, and location. Each diet items' taxonomy was harmonized to the ITIS authority and assigned a taxonomic rank. 
 
-*Population-level diet metric calculations*
+*Population, within-population, and sample level diet metric calculations*
 For each ringtail population, we constructed diet abundance-rank relationships based on reported values and metrics. These data were then fit to a negative exponential curve, from which we could calculate a measure of diet generalism, (sp50, see Hutchinson et al. 2021). 
 
 *Environmental correlates*
@@ -50,7 +49,12 @@ sp50 = latitude + resource richness + competitors + anthropogenic
 $$
 
 ### Caveats
-- need to limit variables due to small sample size
+- need to limit variables due to small sample size?
+- How to account for temporal autocorrelation? \newline
+  Studies observe and report diet metrics at different timescales. As possible, we have extracted diet item frequencies at the finest scale possible.
+  
+- How to account for spatial autocorrelation? \newline
+  Studies observe and report diet metrics at different spatial scales. As possible, we have extracted diet item frequencies at the finest scale possible. We then calculate a distance matrix between each diet observation location. /newline
 - Can I control for study size or duration, since this will bias results? 
 - how to calculate resource availability?
 - how to calculate competitors?
